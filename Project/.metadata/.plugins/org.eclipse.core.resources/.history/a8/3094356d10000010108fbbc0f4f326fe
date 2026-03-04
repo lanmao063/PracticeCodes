@@ -1,0 +1,8 @@
+package aclass;
+
+public class compare extends machine{
+	public compare() {
+		super(  );
+		// TODO Auto-generated constructor stub
+	}
+}

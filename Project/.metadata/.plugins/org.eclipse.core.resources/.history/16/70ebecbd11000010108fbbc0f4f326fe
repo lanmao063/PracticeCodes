@@ -1,0 +1,19 @@
+package aclass;
+
+public class compare {
+	public boolean result()
+	{
+		person dijia=new person();
+		machine sailuo=new machine();
+		int[] temp1=dijia.getInput();
+		int[] temp2=sailuo.getMachine();
+		for(int i:temp1)
+		{
+			for(int j:temp2)
+			{
+				
+			}
+		}
+	}
+	}
+

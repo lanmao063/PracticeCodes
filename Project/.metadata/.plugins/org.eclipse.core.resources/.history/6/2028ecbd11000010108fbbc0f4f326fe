@@ -1,0 +1,18 @@
+package aclass;
+import java.util.Scanner;
+public class person extends compare{
+	private int[] i=new int[10];
+	public void input()
+	{
+		for(int k:i)
+		{
+			Scanner in = new Scanner(System.in);
+			k=in.nextInt();
+		}
+	}
+	public int[] getInput()
+	{
+		return i;
+	}
+
+}

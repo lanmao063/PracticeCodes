@@ -1,0 +1,27 @@
+package aclass;
+
+public class lottery 
+{
+	public static void main(String[] args) 
+	{
+		person pr=new person();
+		machine ma=new machine();
+		System.out.println("请输入彩票号码（1~35）：");
+		pr.input();
+		System.out.println("正在生成中奖号码……");
+		ma.chooseNum();
+		System.out.println("彩票机生成的中奖号码是：");
+		ma.printNum();
+		compare co=new compare(pr,ma);
+		
+		if(co.result())
+		{
+			System.out.println("恭喜您中奖了");
+		}
+		else
+		{
+			System.out.println("很抱歉您没中奖");
+		}
+	}
+
+}

@@ -1,0 +1,5 @@
+package aclass;
+
+public class person {
+	private int[] i=new int[10];
+}

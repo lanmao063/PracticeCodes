@@ -1,0 +1,21 @@
+package aclass;
+import java.util.Scanner;
+public class person extends compare{
+	private int[] number=new int[10];
+	private int[] rankedNumber =new int[10];
+	public void input()
+	{
+		for(int k=0;k<number.length;k++) 
+		{ 
+	        Scanner in = new Scanner(System.in);
+			number[k] = in.nextInt();
+		}
+		rank r=new rank(number);
+		rankedNumber=r.bubble();
+	}
+	public int[] getInput()
+	{
+		return rankedNumber;
+	}
+
+}

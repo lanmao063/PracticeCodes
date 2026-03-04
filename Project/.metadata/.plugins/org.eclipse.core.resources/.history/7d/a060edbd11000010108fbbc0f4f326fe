@@ -1,0 +1,28 @@
+package aclass;
+
+import java.util.Random;
+public class machine
+{
+	private int [] number= new int[10];
+	private int[] rankedNumber=new int[10];
+	public void chooseNum()
+	{
+		Random random=new Random();
+		for(int i=0;i<7;i++)
+		{
+			int index=random.nextInt(1,35);
+			number[i]=index;
+		}
+		rank r = new rank(number);	
+		rankedNumber=r.bubble();
+	}
+	
+	public int[] getMachine()
+	{
+		return rankedNumber;
+	}
+//	public static void main(String[] args) {
+//		
+//	}
+
+}

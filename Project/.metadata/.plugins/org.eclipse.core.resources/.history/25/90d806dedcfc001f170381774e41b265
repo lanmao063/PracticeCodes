@@ -1,0 +1,28 @@
+package cd;
+
+public class CD extends Item{//CD成为了Item的子类
+	private String artist;
+	public CD(String title,String artist ,int numofTracks, int playingtime, String comment) {
+		super(title,numofTracks,playingtime,comment);//在运行时的顺序是：先进行父类成员变量的初始化，再进行父类函数构造，然后开始构造子类
+//		this.title = title;
+//		this.artist = artist;
+//		this.numofTracks = numofTracks;
+//		this.playingtime = playingtime;
+//		this.comment = comment;
+	}
+//	public void  print()
+//	{
+//		//System.out.println(title+":"+artist);
+//	}这里要是有print函数，在db.print()时就会使用CD的函数，如果没有就用父类的print函数，但不管用不用父类的print函数，他都得有print函数
+//	 子类可以继承父类的所有函数及成员变量（private类型依旧不可见）
+	public void print()
+	{
+		super.print();
+		System.out.print(":"+artist);
+	}
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

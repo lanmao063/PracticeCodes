@@ -1,0 +1,39 @@
+package aclass;
+
+import java.util.Random;
+
+public class machine {
+	private int [] number= new int[10];
+	public void chooseNum(){
+		for(int i=0;i<7;i++)
+		{
+			Random r=new Random();
+			int index=r.nextInt(1,35);
+			number[i]=index;
+		}
+	}
+	public void rank(int[] num) {
+		for(int i=0;i<num.length;i++)
+		{
+			for(int j=0;j<i-1;j++)
+			{
+				if(num[j]>num[j+1])
+				{
+					int temp;
+					temp=num[j];
+					num[j]=num[j+1];
+					num[j+1]=temp;
+				}
+			}
+		}
+	}
+	public boolean compare(int[] input)
+	{
+		
+		return false;
+	}
+//	public static void main(String[] args) {
+//		
+//	}
+
+}

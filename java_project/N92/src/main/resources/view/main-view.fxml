@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox prefHeight="68.0" prefWidth="1360.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="700.0">
+               <children>
+                  <Label text="Label" />
+                  <ImageView fitHeight="52.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="660.0">
+               <children>
+                  <CheckBox mnemonicParsing="false" text="CheckBox" />
+                  <Button contentDisplay="RIGHT" mnemonicParsing="false" text="退出" textFill="#ff0242">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="700.0" prefWidth="260.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" text="Button" />
+            <Button mnemonicParsing="false" text="Button" />
+         </children>
+      </VBox>
+   </left>
+   <bottom>
+      <HBox prefHeight="40.0" prefWidth="1360.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <Pane prefHeight="660.0" prefWidth="1100.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
