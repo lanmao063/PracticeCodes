@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<BorderPane fx:controller="cn.edu.neu.hello.controller.HelloController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox prefHeight="80.0" prefWidth="1360.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="700.0">
+               <children>
+                  <Label prefHeight="81.0" prefWidth="224.0" text="东软环保监督平台">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="660.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="66.0" prefWidth="88.0" text="退出" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="568.0" prefWidth="260.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" text="Button" />
+            <Button mnemonicParsing="false" text="Button" />
+            <Button mnemonicParsing="false" text="Button" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <Pane prefHeight="568.0" prefWidth="1100.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
